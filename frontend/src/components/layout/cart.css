@@ -1,0 +1,31 @@
+#totalPrice{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+#totalPrice span{
+    margin-left: 14rem;
+}
+
+.btn_order{
+    width: 250px;
+    height: 39px;
+    border: 2px solid brown;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px black;
+    margin-top: 10rem;
+    border-radius: 12px;
+    color: brown;
+    font-size: large;
+}
+
+.no_product_para{
+    width: 100%;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+}
+.link_btn{
+    margin: 10rem 40%;
+}

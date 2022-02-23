@@ -1,0 +1,8 @@
+.speed_dial{
+    position: fixed;
+    top: 10px;
+    /* color: var(--main-color); */
+}
+.MuiSpeedDial-fab {
+    background-color: red;
+  }
