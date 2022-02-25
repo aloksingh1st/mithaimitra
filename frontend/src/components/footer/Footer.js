@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="#faq">F.A.Q</a>
               </li>
               <li>
-                <a href="#cookies-policy">Cookies Policy</a>
+                <a href="https://www.termsfeed.com/live/494133cd-bd49-4343-a14e-2f37ea1d356c">Cookies Policy</a>
               </li>
               <li>
                 <a href="#terms-of-services">Terms Of Service</a>
@@ -56,7 +56,7 @@ const Footer = () => {
                 <a href="/#faq">F.A.Q</a>
               </li>
               <li>
-                <a href="/#cookies-policy">Cookies Policy</a>
+                <a href="https://www.termsfeed.com/live/494133cd-bd49-4343-a14e-2f37ea1d356c">Cookies Policy</a>
               </li>
               <li>
                 <a href="/#terms-of-services">Terms Of Service</a>

@@ -7,9 +7,25 @@ import UserOptions from "../layout/UserOptions";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import Dialog from '@material-ui/core/Dialog';
+import Button from '@material-ui/core/Button';
+import Search from "../layout/Search";
+
+import { ImCross } from "react-icons/all";
+
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const {isAuthenticated, user} = useSelector((state)=>state.user)
+
+  const [open, setOpen] = useState(false);
+
+  const handleDialog = ()=>{
+    setOpen(!open);
+  }
 
   return (
     <>
@@ -50,9 +66,9 @@ const Navbar = () => {
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
-              <NavLink to="/search">
+              <p  style={{"cursor":"pointer"}} onClick={handleDialog}>
                 <BiSearchAlt />
-              </NavLink>
+              </p>
             </li>
             <li className={isAuthenticated ? "visible_login" : null}>
               <NavLink to="/login">
@@ -71,8 +87,27 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-      </nav>
+      
+      <Dialog open={open} onClose={handleDialog} className="SearchDialog">
 
+         <DialogContent>
+          <DialogContentText>
+         < Search />
+         <ImCross onClick={handleDialog} id="exit_button" size={30}/>
+         ................................................................................................................................................................................................
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleDialog} color="primary">
+           Close
+          </Button>
+          {/* <Button onClick={handleDialog} color="primary" autoFocus>
+           Yes
+          </Button> */}
+        </DialogActions>
+      </Dialog>
+
+      </nav>
     </>
   );
 };

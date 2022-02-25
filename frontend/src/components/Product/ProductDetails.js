@@ -67,6 +67,8 @@ const ProductDetails = () => {
     myForm.set("productId", id);
 
     dispatch(newReview(myForm));
+    
+    window.location.reload();
 
     setOpen(false);
   };
@@ -142,7 +144,7 @@ const ProductDetails = () => {
           <div class="product-rating">
             <ReactStars {...options} />
             <span>
-              {d?.product?.ratings}({d?.product?.review})
+              {d?.product?.ratings}({d?.product?.reviews.length})
             </span>
           </div>
 

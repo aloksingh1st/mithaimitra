@@ -2,7 +2,10 @@
 
 /* BASIC */
 
+.wrapper *{
 
+  margin: 0;
+}
 .wrapper a {
   color: #92badd;
   display:inline-block;
@@ -35,6 +38,10 @@
   margin:5rem 0rem;
 }
 
+
+.form_fixer{
+  margin-top: 23rem;
+}
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;

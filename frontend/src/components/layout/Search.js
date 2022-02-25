@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { useHistory} from "react-router-dom";
 import "./Search.css"
 import { ImCross } from "react-icons/all";
+import {handleDialog} from "../navbar/Navbar"
 // import { useNavigate } from "react-router-dom";
 
 const Search = (props) => {
@@ -27,8 +28,8 @@ const Search = (props) => {
     <>
     <div id="container_for_search">
 
-        <ImCross onClick={backToHome} id="exit_button" size={30}/>
       <form action="" onSubmit={searchSubmitHandler} className="search_tag">
+        
         <input
           type="text"
           placeholder="Search Your Sweet"

@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+.SearchDialog DialogContent{
+  background-color: transparent;
+}
+
 :root {
   --main-color: #a82a37;
   --pink-color: #ff2354;
@@ -143,6 +147,15 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
+
+#exit_button{
+  cursor: pointer;
+  position: relative;
+  left: 20rem;
+  top: -12rem;
+  z-index: 3300030;
+}
+
 .explore-button:hover{
   transform: translateY(2px);
   box-shadow: 5px 5px 15px #a82a37;
