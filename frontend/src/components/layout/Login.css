@@ -2,10 +2,7 @@
 
 /* BASIC */
 
-.wrapper *{
 
-  margin: 0;
-}
 .wrapper a {
   color: #92badd;
   display:inline-block;
@@ -21,6 +18,11 @@
   display:inline-block;
   margin: 40px 8px 10px 8px; 
   color: #cccccc;
+}
+
+
+.wrapper .register_form_holder form {
+  margin-top: 23rem;
 }
 
 

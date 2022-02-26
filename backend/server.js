@@ -1,5 +1,4 @@
 const app = require("./app");
-const dotEnv = require("dotenv");
 const connectDB = require("./config/db");
 const Razorpay = require("razorpay");
 
@@ -14,8 +13,10 @@ process.on("uncaughtException", (err) =>{
 })
 
 
+if(process.env.NODE_ENV !="PRODUCTION"){
 
-dotEnv.config({ path: "backend/config/config.env" });
+  require("dotenv").config({ path: "backend/config/config.env" });
+}
 port = process.env.PORT;
 
 connectDB();
