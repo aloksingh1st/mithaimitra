@@ -1,0 +1,11 @@
+.termsofService{
+    width: 60%;
+    margin: auto;
+    box-shadow: 8px 8px 19px brown;
+    padding: 12rem;
+    font-size: 1.5rem;
+}
+.termsofService ul li{
+    list-style-type:disclosure-closed;
+    padding: 2rem;
+}

@@ -11,8 +11,7 @@ const Footer = () => {
             <h3>Mithai Mitra</h3>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              voluptatem corporis error non,
+            Mithai Mitra's mission is to deliver the best quality and fresh products in affordable price at your doorstep.
             </p>
 
             <div class="social">
@@ -41,7 +40,7 @@ const Footer = () => {
                 <a href="https://www.termsfeed.com/live/494133cd-bd49-4343-a14e-2f37ea1d356c">Cookies Policy</a>
               </li>
               <li>
-                <a href="#terms-of-services">Terms Of Service</a>
+                <a href="/terms-of-service">Terms Of Service</a>
               </li>
               <li>
                 <a href="#support">Support</a>
@@ -52,14 +51,14 @@ const Footer = () => {
           <div class="column links">
             <h3>Some Links</h3>
             <ul>
-              <li>
+              {/* <li>
                 <a href="/#faq">F.A.Q</a>
-              </li>
+              </li> */}
               <li>
                 <a href="https://www.termsfeed.com/live/494133cd-bd49-4343-a14e-2f37ea1d356c">Cookies Policy</a>
               </li>
               <li>
-                <a href="/#terms-of-services">Terms Of Service</a>
+                <a href="/terms-of-service">Terms Of Service</a>
               </li>
               <li>
                 <a href="/products">Explore</a>

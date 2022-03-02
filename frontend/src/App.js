@@ -34,6 +34,7 @@ import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
 import NotFound from "./components/layout/Not Found/NotFound";
+import TermsOfService from "./components/layout/TermsOfService";
 
 const App = () => {
   const [stripeApiKey, setStripApiKey] = useState("");
@@ -77,6 +78,10 @@ const App = () => {
         </Route>
         <Route path="/loader">
           <Loader />
+        </Route>
+
+        <Route path="/terms-of-service">
+          <TermsOfService />
         </Route>
 
         <ProtectedRoute exact path="/account" component={Profile} />

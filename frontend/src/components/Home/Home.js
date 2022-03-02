@@ -38,8 +38,8 @@ const Home = () => {
 
 <section className="hero-section">
 <section className="left-side">
-  <h1>Lorem, ipsum dolor</h1>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/> Modi ut dolores aliquid obcaecati nisi natus vero.</p>
+  <h1>MithaiMitra</h1>
+  <p>Eat something which makes your life sweeter. We MithaiMitra brings you the healthiest sweet in the market.</p>
  <a href="/#container" className='explore-button'>Explore</a>
 
 </section>
